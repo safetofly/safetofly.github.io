@@ -22,5 +22,5 @@ There is a lack of formal, explicit models that characterize uncertainty and saf
 
 The **goal** of this thesis is to design, implement, and empirically evaluate formal methods-based models for safety and uncertainty in simulation-based testing of UAVs.
 
-![picture of delivery drone](drone.png.)
-![](Hasler.png)
+![|50](drone.png)
+![|40](Hasler.png)
