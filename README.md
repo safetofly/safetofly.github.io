@@ -1,4 +1,5 @@
 ### safetofly:
+
 ## Advancing UAV Reliability and Societal Trust Through Integrated Testing and Formal Verification
 
 The Safe-2-Fly project addresses the safety challenges of autonomous Unmanned Aerial Vehicles (UAVs) by bridging the gap between practical testing and theoretical formal verification. Recognizing that field testing is unscalable and formal methods are often computationally infeasible, the project proposes a hybrid, interdisciplinary approach involving experts in robotics, software engineering, and logic. By employing specification mining to extract behavioral rules from execution traces, Safe-2-Fly creates machine-readable safety standards that can be used for both automated test generation and real-time flight monitoring. Ultimately, this integration aims to eliminate "hidden gaps" in system reliability, ensuring UAVs can navigate complex environments safely while strengthening societal trust in intelligent autonomous technologies.
@@ -12,3 +13,5 @@ Simulation-based testing has emerged as a key enabler for validating UAV softwar
 Recent empirical studies show that uncertainty in UAV behavior can be a major contributor to unsafe outcomes, yet uncertainty is often treated implicitly or ignored in current testing pipelines. There is a lack of formal, explicit models that characterize uncertainty and safety jointly, and that can be systematically applied to UAV simulation data.
 
 The goal of this thesis is to design, implement, and empirically evaluate formal methods-based models for safety and uncertainty in simulation-based testing of UAVs.
+
+![picture of delivery drone](https://github.com/safetofly/safetofly.github.io/blob/main/drone.png.png)
