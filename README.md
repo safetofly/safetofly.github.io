@@ -6,7 +6,7 @@ The Safe-2-Fly project addresses the safety challenges of autonomous Unmanned Ae
 
 Recognizing that field testing is unscalable and formal methods are often computationally infeasible, the project proposes a hybrid, interdisciplinary approach involving experts in robotics, software engineering, and logic. 
 
-By employing specification mining to extract behavioral rules from execution traces, Safe-2-Fly creates machine-readable safety standards that can be used for both automated test generation and real-time flight monitoring. 
+By employing specification mining to extract behavioral rules from execution traces, Safetofly creates machine-readable safety standards that can be used for both automated test generation and real-time flight monitoring. 
 Ultimately, this integration aims to eliminate *hidden gaps* in system reliability, ensuring UAVs can navigate complex environments safely while strengthening societal trust in intelligent autonomous technologies.
 
 This project is funded by the [Hasler Foundation](https://haslerstiftung.ch/) and includes work packages as follows: 
