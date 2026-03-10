@@ -1,21 +1,30 @@
 ---
 layout: home
-title: Home
+title: Project Overview
 ---
-</head>
+
+<section style="display: flex; flex-wrap: wrap; gap: 30px; align-items: flex-start; margin-top: 20px;">
+  
+  <div style="flex: 2; min-width: 300px;">
+    <h2 style="margin-top: 0;">Safe-2-Fly: Advancing UAV Reliability and Societal Trust Through Integrated Testing and Formal Verification</h2>
     
-<body>
-    <h1>Safe-2-Fly: Advancing UAV Reliability and Societal Trust Through Integrated Testing and Formal Verification</h1>
     <p>The Safe-2-Fly project addresses the safety challenges of autonomous Unmanned Aerial Vehicles (UAVs) by bridging the gap between practical testing and theoretical formal verification.</p>
+    
     <p>Recognizing that field testing is unscalable and formal methods are often computationally infeasible, the project proposes a hybrid, interdisciplinary approach involving experts in robotics, software engineering, and logic.</p>
-    <p>By employing specification mining to extract behavioral rules from execution traces, <b>Safetofly</b> creates machine-readable safety standards that can be used for both automated test generation and real-time flight monitoring.</p>
+    
+    <p>By employing specification mining to extract behavioral rules from execution traces, <strong>Safetofly</strong> creates machine-readable safety standards that can be used for both automated test generation and real-time flight monitoring.</p>
+    
     <p>Ultimately, this integration aims to eliminate hidden gaps in system reliability, ensuring UAVs can navigate complex environments safely while strengthening societal trust in intelligent autonomous technologies.</p>
-    <div class="funding">
-        <p>This project is funded by the <b><a href="https://haslerstiftung.ch">Hasler Foundation</a></b> and includes work packages as follows:</p>
-    </div>
-   
-<img src="drone.png" alt="Safe To Fly" width="200" height="100">
-<img src="Hasler.png" alt="Founded By" width="100" height="50">
-       
-</body>
-</html>
+    
+    <p>
+  This project is funded by the 
+  <a href="https://haslerstiftung.ch" target="_blank"><strong>Hasler Foundation</strong></a> 
+  and includes work packages as follows:
+</p> </div>
+
+  <div style="flex: 1; min-width: 250px; display: flex; flex-direction: column; gap: 15px;">
+    <img src="{{ '/drone.png' | relative_url }}" alt="UAV" style="width: 100%; border-radius: 8px; shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="{{ '/Hasler.png' | relative_url }}" alt="Hasler Foundation" style="width: 100%; border-radius: 8px; shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  </div>
+
+</section>
