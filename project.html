@@ -1,16 +1,63 @@
 ---
 layout: page
-title: Project
+title: Project Details
+permalink: /project/
 ---
 
-</head>
-   
-<body>
-    <h2>Formal Modeling of Unsafety and Uncertainty in Simulation-based Testing of UAV</h2>
-    <p>Simulation-based testing has emerged as a key enabler for validating UAV software at scale. Frameworks such as <a href="https://skhatiri.github.io/Aerialist-Project/" target="_blank"><strong>Aerialist</strong></a> allow developers to execute thousands of simulated flights under diverse environmental, mission, and configuration conditions, avoiding the risks and costs of real-world testing.</p>
-    <p>However, simulation-based testing introduces new challenges, particularly related to uncertainty and non-deterministic behaviors, where the same test case may produce different outcomes across executions.</p>
-    <p>Recent empirical studies show that uncertainty in UAV behavior can be a major contributor to unsafe outcomes, yet uncertainty is often treated implicitly or ignored in current testing pipelines. There is a lack of formal, explicit models that characterize uncertainty and safety jointly, and that can be systematically applied to UAV simulation data.</p>
-    <p>The goal of this thesis is to design, implement, and empirically evaluate formal methods-based models for safety and uncertainty in simulation-based testing of UAVs.</p>
+<section style="display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; margin-top: 30px;">
+  
+  <div style="flex: 2; min-width: 300px;">
+    <h2 style="margin-top: 0; line-height: 1.2; color: #111;">
+      Formal Modeling of Unsafety and Uncertainty in Simulation-based Testing of UAV
+    </h2>
+    
+    <p>
+      Simulation-based testing has emerged as a key enabler for validating UAV software at scale. 
+      Frameworks such as <a href="https://skhatiri.github.io/Aerialist-Project/" target="_blank"><strong>Aerialist</strong></a> 
+      allow developers to execute thousands of simulated flights under diverse environmental, mission, 
+      and configuration conditions, avoiding the risks and costs of real-world testing.
+    </p>
+    
+    <p>
+      However, simulation-based testing introduces new challenges, particularly related to 
+      <strong>uncertainty and non-deterministic behaviors</strong>, where the same test case 
+      may produce different outcomes across executions.
+    </p>
+    
+    <p>
+      Recent empirical studies show that uncertainty in UAV behavior can be a major contributor 
+      to unsafe outcomes, yet uncertainty is often treated implicitly or ignored in current 
+      testing pipelines. There is a lack of formal, explicit models that characterize uncertainty 
+      and safety jointly, and that can be systematically applied to UAV simulation data.
+    </p>
+    
+    <div style="background: #fdf6e3; border-left: 4px solid #b58900; padding: 15px; margin-top: 20px;">
+      <strong>The Goal:</strong> The goal of this thesis is to design, implement, and empirically 
+      evaluate formal methods-based models for safety and uncertainty in simulation-based 
+      testing of UAVs.
+    </div>
+  </div>
 
-</body>
-</html>
+  <div style="flex: 1; min-width: 280px; display: flex; flex-direction: column; gap: 20px;">
+    
+    <figure style="margin: 0;">
+      <img src="{{ '/project-photo1.jpg' | relative_url }}" 
+           alt="UAV Simulation Environment" 
+           style="width: 100%; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+      <figcaption style="font-size: 0.8em; color: #666; margin-top: 8px; text-align: center;">
+        UAV Simulation environment in action.
+      </figcaption>
+    </figure>
+
+    <figure style="margin: 0;">
+      <img src="{{ '/project-photo2.jpg' | relative_url }}" 
+           alt="Formal Modeling Architecture" 
+           style="width: 100%; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+      <figcaption style="font-size: 0.8em; color: #666; margin-top: 8px; text-align: center;">
+        Formal modeling framework for uncertainty.
+      </figcaption>
+    </figure>
+
+  </div>
+
+</section>
