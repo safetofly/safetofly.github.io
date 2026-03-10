@@ -1,7 +1,2 @@
 # _config.yml
 theme: minima
-remote_theme: "jekyll/minima@1e8a445"
-
-# Gemfile
-
-gem "minima", github: "jekyll/minima", ref: "1e8a445"
