@@ -4,37 +4,90 @@ title: Tools
 permalink: /tools/
 ---
 
-<div class="tools-container" style="margin-top: 30px;">
-  
-  <h2>STLCG (Signal Temporal Logic Computation Graph)</h2>
-  
-  <p>
-    <strong>STLCG</strong> is a powerful Python toolbox that represents Signal Temporal Logic (STL) 
-    robustness formulas as computation graphs. By leveraging PyTorch, it enables 
-    back-propagation through logic specifications, allowing for a seamless integration of 
-    formal requirements into gradient-based optimization and machine learning workflows.
-  </p>
+<style>
+  .tool-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    align-items: flex-start;
+  }
+  .tool-media {
+    flex: 1;
+    min-width: 250px;
+  }
+  .tool-media img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .tool-info {
+    flex: 2;
+    min-width: 300px;
+  }
+  .publication-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid #2a7ae2;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9em;
+  }
+  .tool-links a {
+    margin-right: 15px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+</style>
 
-  <div style="display: flex; gap: 15px; margin: 20px 0;">
-    <a href="https://uw-ctrl.github.io/stlcg/" target="_blank" class="btn" 
-       style="background-color: #2a7ae2; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">
-       Visit STLCG Website
-    </a>
-    
-    <a href="https://github.com/StanfordASL/stlcg" target="_blank" 
-       style="background-color: #f5f5f5; color: #333; padding: 10px 20px; text-decoration: none; border-radius: 5px; border: 1px solid #ccc;">
-       View Source Code
-    </a>
-  </div>
+<div class="tools-wrapper" style="margin-top: 30px;">
 
-  <h3>Related Publication</h3>
-  <div style="background-color: #f9f9f9; border-left: 5px solid #2a7ae2; padding: 20px; border-radius: 4px;">
-    <p style="margin-top: 0; font-family: monospace; font-size: 0.9em; color: #555;">
-      K. Leung, N. Aréchiga, and M. Pavone, <strong>"Back-propagation through Signal Temporal Logic Specifications: Infusing Logical Structure into Gradient-Based Methods,"</strong> in <em>Workshop on Algorithmic Foundations of Robotics (WAFR)</em>, 2020.
-    </p>
-    <a href="https://arxiv.org/abs/2008.00097" target="_blank" style="font-size: 0.9em; color: #2a7ae2;">
-      Read the Paper (arXiv) &rarr;
-    </a>
-  </div>
+  <section class="tool-section">
+    <div class="tool-media">
+      <img src="{{ '/Aerialist.png' | relative_url }}" alt="Aerialist Framework Overview">
+    </div>
+    <div class="tool-info">
+      <h2 style="margin-top: 0;">AERIALIST: UAV Test Bench</h2>
+      <p>
+        Aerialist (unmanned AERIAL vehIcle teST bench) is a novel test bench for UAV software that automates all the necessary UAV testing steps: setting up the test environment, building and running the UAV firmware code, configuring the simulator with the simulated world properties, connecting the simulated UAV to the firmware and applying proper UAV configurations at startup, scheduling and executing runtime commands, monitoring the UAV at runtime for any issues, and extracting the flight log file after the test completion.
+
+With Aerialist, we aim to provide researchers with an easy platform to automate tests on both simulated and real UAVs, allowing them to do experiments required to overcome the UAV simulation-based testing challenges. Aerialist is used to organize the UAV Testing Competition.
+      </p>
+      <div class="tool-links">
+        <a href="https://github.com/skhatiri/Aerialist" target="_blank" style="color: #2a7ae2;">Visit Website &rarr;</a>
+        <a href="https://github.com/skhatiri/Aerialist" target="_blank" style="color: #333;">GitHub Repository</a>
+      </div>
+      
+      <div class="publication-box">
+        <strong>Related Publication:</strong><br>
+        K. Leung, N. Aréchiga, and M. Pavone, "Back-propagation through Signal Temporal Logic Specifications," WAFR, 2020.
+        <br><a href="https://arxiv.org/abs/2008.00097" target="_blank" style="color: #d33;">[PDF/ArXiv]</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tool-section">
+    <div class="tool-media">
+      <img src="{{ '/Surrealist.png' | relative_url }}" alt="Surrealist Framework Overview">
+    </div>
+    <div class="tool-info">
+      <h2 style="margin-top: 0;">SURREALIST: Simulation-based Test Case Generation for UAVs in the Neighborhood of Real Flights</h2>
+      <p>
+       Simulation-based testing represents a fundamental testing practice for Unmanned aerial vehicles (UAVs), but the testing scenarios considered in software-in-the-loop testing may not be representative of the actual scenarios experienced in the field. Here, we propose Surrealist (teSting Uavs in the neighboRhood of REAl fLIghtS), a novel search-based approach that analyses logs of real UAV flights and automatically generates simulation-based tests in the neighborhood of such real flights, thereby improving the realism and representativeness of the simulation-based tests. This is done in two steps: first, Surrealist faithfully replicates the given UAV flight in the simulation environment, generating a simulation-based test that mirrors a pre-logged real-world behavior. Then, it smoothly manipulates the replicated flight conditions to discover slightly modified flight scenarios that are challenging or trigger misbehaviors of the UAV under test in simulation.
+
+Surrealist internally uses Aerialist, A UAV test bench developed on top of PX4, to evalute the UAV test cases in the simulation environment.
+      </p>
+      <div class="tool-links">
+        <a href="https://github.com/skhatiri/Surrealist" target="_blank" style="color: #2a7ae2;">Visit Website &rarr;</a>
+      </div>
+      
+      <div class="publication-box">
+        <strong>Related Publication:</strong><br>
+        S. Khatiri, et al., "Simulation-based Testing of UAVs with Aerialist," 2023.
+        <br><a href="#" target="_blank" style="color: #d33;">[PDF]</a>
+      </div>
+    </div>
+  </section>
 
 </div>
