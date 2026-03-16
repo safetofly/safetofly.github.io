@@ -1,11 +1,99 @@
 ---
 layout: page
 title: Datasets
+permalink: /datasets/
 ---
 
-</head>
+<style>
+  .dataset-container {
+    margin-top: 30px;
+    max-width: 900px;
+  }
+  .dataset-item {
+    background: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    transition: box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .dataset-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  .dataset-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+  }
+  .dataset-title {
+    margin: 0;
+    color: #0366d6;
+    font-size: 1.4em;
+  }
+  .dataset-tag {
+    background: #e1f5fe;
+    color: #01579b;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .dataset-description {
+    color: #444;
+    line-height: 1.6;
+    font-size: 0.95em;
+  }
+  .dataset-meta {
+    font-size: 0.85em;
+    color: #666;
+    font-style: italic;
+  }
+  .btn-link {
+    display: inline-block;
+    background-color: #24292e;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    width: fit-content;
+    margin-top: 10px;
+  }
+  .btn-link:hover {
+    background-color: #444;
+  }
+</style>
 
-<body>
-     
-</body>
-</html>
+<div class="dataset-container">
+
+  <div class="dataset-item">
+    <div class="dataset-header">
+      <h2 class="dataset-title">Safetofly Dataset</h2>
+      <span class="dataset-tag">Replication Package</span>
+    </div>
+    <div class="dataset-meta">Related Publication: <strong>"When Uncertainty Leads to Unsafety: Empirical Insights into the Role of Uncertainty in Unmanned Aerial Vehicle Safety"</strong></div>
+    <p class="dataset-description">
+      This repository contains the replication package for our research paper titled "When Uncertainty Leads to Unsafety: Empirical Insights into the Role of Uncertainty in Unmanned Aerial Vehicle Safety". It includes all necessary data and code to replicate the findings and experiments presented in the paper.
+        
+The replication package is organized into the following top-level folder:
+
+datasets: This folder contains all the datasets discussed in the paper. It includes time-windowed datasets for training and testing (train, test1, test2), manually labeled data, and plots of the labeled flights.
+
+    </p>
+    <a href="https://zenodo.org/records/10402443" class="btn-link">View on GitHub →</a>
+  </div>
+
+  <div class="dataset-item">
+    <div class="dataset-header">
+      <h2 class="dataset-title">CloudMetrics 2024</h2>
+      <span class="dataset-tag">SQL Dump</span>
+    </div>
+    <div class="dataset-meta">Related Tool: <strong>CloudMonitor Pro</strong></div>
+    <p class="dataset-description">
+      A comprehensive
