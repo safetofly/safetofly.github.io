@@ -1,52 +1,86 @@
 ---
 layout: page
-title: About Us 
+title: About Us
 permalink: /about/
 ---
 
 <style>
   .contact-container {
     display: grid;
-    /* Adjusted minmax to 250px to give bios more breathing room */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Forces three columns in a single row */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 30px;
   }
+
   .contact-card {
-    border: 1px solid #eee;
+    border: 1px solid #e1e4e8;
     padding: 20px;
     text-align: center;
-    border-radius: 8px;
-    background: #f9f9f9;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: box-shadow 0.2s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  .contact-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
   .contact-card img {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
+    border: 2px solid #0366d6;
   }
+
   .contact-card h3 { 
     margin: 10px 0 5px 0; 
+    font-size: 1.2em;
     color: #333;
   }
+
   .contact-card .role { 
     font-weight: bold;
-    font-size: 0.9em; 
-    color: #777;
+    font-size: 0.85em; 
+    color: #0366d6;
     margin-bottom: 10px;
     text-transform: uppercase;
-    letter-spacing: 1px;
   }
+
   .contact-card .bio {
     font-size: 0.85em;
     color: #555;
     line-height: 1.5;
-    margin-top: 10px;
-    text-align: left; /* Bios are usually easier to read left-aligned */
+    margin-bottom: 15px;
+  }
+
+  .social-links {
+    margin-top: auto; /* Pushes links to the bottom if bios are different lengths */
+    display: flex;
+    gap: 15px;
+    font-size: 0.9em;
+  }
+
+  .social-links a {
+    text-decoration: none;
+    color: #24292e;
+    font-weight: 500;
+  }
+
+  .social-links a:hover {
+    color: #0366d6;
+  }
+
+  /* Responsive: Stacks on mobile */
+  @media (max-width: 768px) {
+    .contact-container {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 
@@ -55,16 +89,20 @@ permalink: /about/
     <img src="{{ '/Sebastiano.jpeg' | relative_url }}" alt="Sebastiano">
     <h3>Sebastiano Panichella</h3>
     <p class="role">Supervisor</p>
-    <p class="bio">
-     Sebastiano Panichella is a passionate Computer Science Researcher at the University of Bern (UniBe) and Head of the IDeaLS Lab (Intelligent Development and Large-Scale Systems Lab) at the Italian Institute of Artificial Intelligence for Industry (AI4I). 
+    <p class="bio"> Sebastiano Panichella is a passionate Computer Science Researcher at the University of Bern (UniBe) and Head of the IDeaLS Lab (Intelligent Development and Large-Scale Systems Lab) at the Italian Institute of Artificial Intelligence for Industry (AI4I). 
 
 His research interests are in the domain of Software Engineering (SE), Data Science (DS), Life Engineering (LE), and Cloud computing (CC): DevOps (e.g., Continuous Delivery, Continuous integration), Machine learning applied to SE, Software maintenance and evolution (with particular focus on Cloud, mobile, AI-based, and Cyber-physical applications), Mobile Computing. 
       
 Sebastiano Panichella is also deeply interested in interdisciplinary research, where computer science intersects with life sciences. His work bridges software engineering, AI/ML, and domain-specific expertise, creating impactful collaborations beyond traditional disciplinary boundaries.
-
-
     </p>
+    <div class="social-links">
+      <a href="sebastiano.panichella@unibe.ch">Email</a>
+      <a href="https://www.linkedin.com/in/sebastiano-panichella-a47b3839/" target="_blank">LinkedIn</a>
+    </div>
   </div>
+
+
+
 
   <div class="contact-card">
     <img src="{{ '/Atefeh.jpeg' | relative_url }}" alt="Atefeh">
@@ -77,6 +115,10 @@ Her expertise lies in applying formal methods to safety-critical software, creat
 
 She is passionate about scaling these techniques in fast-paced startup environments to turn theoretical safety into real-world results.
     </p>
+    <div class="social-links">
+      <a href="atefeh.rohani@unibe.ch">Email</a>
+      <a href="https://www.linkedin.com/in/atefeh-rohani/" target="_blank">LinkedIn</a>
+    </div>
   </div>
 
     <div class="contact-card">
@@ -85,4 +127,8 @@ She is passionate about scaling these techniques in fast-paced startup environme
     <p class="role">Software Engineer</p>
     <p class="bio">
     Claude is a Master student in Computer Science and Mathematics, University of Bern, with interests in coding, machine learning, statistics, and probability theory.
+       <div class="social-links">
+      <a href="claude.meier1@students.unibe.ch">Email</a>
+      <a href="https://www.linkedin.com/in/claude-meier-5a28b0366/" target="_blank">LinkedIn</a>
+    </div>
 </div>
